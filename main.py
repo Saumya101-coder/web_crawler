@@ -43,7 +43,7 @@ st.set_page_config(page_title="Web Crawler", page_icon="🌐", layout="wide")
 with open("styles.css", "r") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-st.markdown("<h1 class='title'>🌐 Glass Web Crawler Simulator</h1>", unsafe_allow_html=True)
+st.markdown("<h1 class='title'>🌐 Web Crawler Simulator</h1>", unsafe_allow_html=True)
 
 col1, col2, col3 = st.columns([3,1,1])
 with col1:
@@ -60,4 +60,5 @@ if st.button("🚀 Start Crawl"):
             st.write("### Discovered Links:")
             for l in links:
                 st.markdown(f"- {l}")
+
     st.success("✅ Crawl Complete")
